@@ -15,7 +15,9 @@ Generate circles which makes you look like an artist!
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		circles.Gradient()
+		for i := 0; i < 10; i++ {
+			circles.Gradient()
+		}
 	},
 }
 

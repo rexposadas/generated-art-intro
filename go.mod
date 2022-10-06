@@ -3,6 +3,7 @@ module github.com/rexposadas/generated-art-intro
 go 1.18
 
 require (
+	github.com/google/uuid v1.3.0
 	github.com/jdxyw/generativeart v0.0.0-20220127024657-50049f153090
 	github.com/spf13/cobra v1.5.0
 )

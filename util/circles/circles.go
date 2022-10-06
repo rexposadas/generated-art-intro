@@ -1,6 +1,7 @@
 package circles
 
 import (
+	"fmt"
 	"github.com/jdxyw/generativeart"
 	"github.com/jdxyw/generativeart/arts"
 	"github.com/rexposadas/generated-art-intro/util/rn"
@@ -23,6 +24,8 @@ func Gradient() {
 	c.FillBackground()
 	c.SetColorSchema(colors)
 	c.Draw(arts.NewColorCircle2(30))
-	c.ToPNG("circle.png")
+
+	// Make sure our filenames are unique.
+	c.ToPNG(fmt.Sprintf("circle-%s.png", rn.ID()))
 
 }
